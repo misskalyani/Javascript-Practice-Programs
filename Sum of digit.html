@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<form>
+			Enter Number:
+			<input type="text" Id="t1"><br>
+			<input type="button" value="Sum Of Digit"onclick="digit_sum()">
+		</form>
+	</body>
+</html>	
+<script>
+	function digit_sum()
+	{
+		var n=document.getElementById("t1").value;
+		s=0;
+		while(n>0)
+		{
+			d=n%10;
+			s=s+d;
+			n=parseInt(n/10);
+		}
+		document.write("Sum Of Digit = "+s);
+	}
+</script>

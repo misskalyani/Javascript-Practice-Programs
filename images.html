@@ -1,0 +1,30 @@
+<html>
+	<body>
+		<form>
+			<input type="button" value="image1" onmousemove="show1">
+			<input type="button" value="image2" onmousemove="show2">
+			<input type="button" value="image3" onmousemove="show3">
+			<input type="button" value="image4" onmousemove="show4"><br>
+			
+			<img id="img1" alt="Image File here" width="300" height="300">
+		</form>
+	</body>
+</html>	
+<script>
+	function show1()
+	{
+		document.getElementById("img1").src="image1.jpg";
+	}
+	function show2()
+	{
+		document.getElementById("img1").src="image2.jpg";
+	}
+	function show3()
+	{
+		document.getElementById("img1").src="image3.jpg";
+	}
+	function show4()
+	{
+		document.getElementById("img1").src="image4.jpg";
+	}
+</script>

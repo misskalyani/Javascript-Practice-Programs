@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<form>
+			Enter User Name ::
+			<input type="text" id="t1"><br>
+			Enter Password ::
+			<input type="password" id="t2"><br>
+			<input type="button" value="Login" onclick="check()">
+	</form>
+	</body>
+</html>	
+<script>
+	function check()
+	{
+		var u=document.getElementById("t1").value;
+		var p=document.getElementById("t2").value;
+		if(u=="rbnb" && p=="bcs123")
+			alert("Login Successfully..");
+		else
+			alert("Invalid User name or Password");
+	}
+</script>
+	
